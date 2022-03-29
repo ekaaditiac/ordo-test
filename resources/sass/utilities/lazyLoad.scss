@@ -1,0 +1,13 @@
+.blur-up{
+  filter: blur(5px);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s, filter 600ms, -webkit-filter 600ms;
+  .lazyloaded{
+    filter: blur(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+  
+

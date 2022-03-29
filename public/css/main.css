@@ -1,0 +1,15 @@
+.bg-color-secondary {
+  background-color: #eddfd8;
+}
+
+.text-color-base {
+  color: #4923f4;
+}
+
+.h-screen\/4 {
+  height: calc(100vh - 90px);
+}
+
+.card {
+  background-color: white;
+}
