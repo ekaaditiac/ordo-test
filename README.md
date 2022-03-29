@@ -37,6 +37,10 @@ npm install
 
 composer dump-autoload
 
+don't forget to rename .env.development to .env
+
+php artisan key:generate
+
 npm run watch (livereload)
 or
 npm run dev
