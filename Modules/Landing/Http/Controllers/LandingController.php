@@ -5,6 +5,7 @@ namespace Modules\Landing\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Landing\Entities\Work;
 
 class LandingController extends Controller
 {
@@ -13,9 +14,14 @@ class LandingController extends Controller
      * @return Renderable
      */
     public function index()
-    {
-        return view('landing::index');
+    {   
+        // dd(Work::view());
+        return view('landing::index',[
+            "works" => Work::view()
+        ]);
     }
+
+    
 
     /**
      * Show the form for creating a new resource.
